@@ -79,7 +79,6 @@ class Computer:
 
 class Smartphone(Telephone,Computer):
     def __init__(self,m,p,s) -> None:
-      
         Computer.__init__(self,p=p)
         Telephone.__init__(self,m=m)
         self.s=s
@@ -87,6 +86,8 @@ class Smartphone(Telephone,Computer):
        
 
 sp=Smartphone(m='m',p='p',s='s')
+print(sp.p)
+print(sp.m)
        
             
             
